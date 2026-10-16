@@ -91,6 +91,61 @@ public class MainClass {
 		System.out.println("num1:" + num1);
 		System.out.println("num2:" + num2);
 		
+		//논리 데이터 타입
+		//참(true), 거짓(false)
+		//boolean 	1byte	 true, false
+
+		boolean flag = true;
+		System.out.println("flag: " + flag);
+		
+		
+		//문자와 문자열 데이터 타입
+		//문자
+		/*
+		* 메모리에 문자 데이터를 저장하기 위해서 사용하는 데이터 타입
+		* char		2byte
+		*/
+
+		char ch = 'a';
+		// char ch = "a";
+
+		System.out.println("ch: " + ch);
+		ch = 'b';
+		System.out.println("ch: " + ch);
+		// ch = 'hello'; 		error
+		
+		//빈문자(empty) vs 공백문자(space)
+		//char char1 = '' ; 문자 하나 있어야 하는데 비어있어서 에러
+		//char char2 = ' ' ; 가능
+		//문자는 메모리에 저장될 때 정수(유니코드)로 저장이 된다.
+
+		char char1 ='A';
+		System.out.println("char1: " + char1);
+
+		int unicode = char1;
+		System.out.println("unicode: " + unicode);		//65
+
+		char char3 = 'ㄱ';
+		System.out.println("char3: " + char3);			//ㄱ
+
+		unicode = char3;
+		System.out.println("unicode: " + unicode);		//12593
+
+		char char4 = 65;
+		System.out.println("char4: " + char4);			//A
+
+		char4 = 12593;
+		System.out.println("char4: " + char4);
+
+		//문자열
+		//String
+
+		String str1 = "Hello";
+		System.out.println("str1: " + str1);
+
+		str1 = "";
+		str1 = " ";
+		
 	}
 
 }
