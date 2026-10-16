@@ -46,16 +46,27 @@ public class MainClass {
 		System.out.println("intNum: " + intNum);
 		
 		int intNum01 = -2147483648;
-		System.out.println("intNum01: " + intNum01); // 언더플로우
+		System.out.println("intNum01: " + intNum01);  // -2147483648
 		
 		intNum01 = intNum01 -1;
-		System.out.println("intNum01: " + intNum01);
+		System.out.println("intNum01: " + intNum01); // -2147483649(x) 2147483647(o)
 		
 		long longNum = 7223372036854775808L;
 		System.out.println("longNum: " + longNum);
 		
+		System.out.println("byte 최솟값: " + Byte.MIN_VALUE);
+		System.out.println("byte 최댓값: " + Byte.MAX_VALUE);
 		
-
+		System.out.println("short 최솟값: " + Short.MIN_VALUE);
+		System.out.println("short 최댓값: " + Short.MAX_VALUE);
+		
+		System.out.println("int 최솟값: " + Integer.MIN_VALUE);
+		System.out.println("int 최댓값: " + Integer.MAX_VALUE);
+		
+		System.out.println("long 최솟값: " + Long.MIN_VALUE);
+		System.out.println("long 최댓값: " + Long.MAX_VALUE);
+		
+		
 	}
 
 }
