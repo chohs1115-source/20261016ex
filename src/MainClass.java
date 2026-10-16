@@ -202,8 +202,11 @@ public class MainClass {
 		System.out.println("inputString: " + inputString); 	//inputString: java
 		*/
 		
-		String inputString = scanner.next();
+		String inputString = scanner.next();				//hello java
 		System.out.println("inputString: " + inputString);
+		
+		inputString = scanner.nextLine();     //java \n
+		System.out.println("inputString: " + inputString);	//java
 		
 		scanner.close();
 		
