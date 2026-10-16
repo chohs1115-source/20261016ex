@@ -1,0 +1,11 @@
+*.class
+
+*.log
+
+.metadata/ .settings/ .recommenders/ .loadpath
+
+bin/ build/ targer/
+
+.Ds_Stored Thumbs.db
+
+.tmp .swp *.bak
