@@ -66,6 +66,30 @@ public class MainClass {
 		System.out.println("long 최솟값: " + Long.MIN_VALUE);
 		System.out.println("long 최댓값: " + Long.MAX_VALUE);
 		
+		// 실수(부동소수점)
+
+		/*
+		 * float 	4byte
+		 * double 	8byte
+		*/
+
+		float floatNum = 3.14f;
+		System.out.println("floatNum: " + floatNum);
+
+		double doubleNum = 3.14159265358979;
+		System.out.println("doubleNum: " + doubleNum);
+
+		System.out.println("float 최솟값: " + Float.MIN_VALUE);
+		System.out.println("float 최댓값: " + Float.MAX_VALUE);
+
+		System.out.println("double 최솟값: " + Double.MIN_VALUE);
+		System.out.println("double 최댓값: " + Double.MAX_VALUE);
+
+		float num1 = 3.14159265358979323846264338327950288f;
+		double num2 = 3.14159265358979323846264338327950288d;
+
+		System.out.println("num1:" + num1);
+		System.out.println("num2:" + num2);
 		
 	}
 
