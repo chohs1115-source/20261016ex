@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class MainClass {
 
@@ -145,6 +146,66 @@ public class MainClass {
 
 		str1 = "";
 		str1 = " ";
+		
+		// 콘솔을 이용한 데이터 입력, 출력
+		// 데이터 출력
+		System.out.print("hello python");
+		System.out.println("hello java");  // line
+		System.out.println("hello python\n");
+		System.out.println("hello java");
+		
+		String str = "hello~";
+		System.out.println(str);
+		
+		/*
+		 * 특수문자 정리
+		 * \n 	개행(줄 바꿈)
+		 * \t 	탭(4칸 공백)
+		 * \'	작은 따옴표(')
+		 * \"	큰 따옴표(")
+		 * \\	역슬래쉬(\)
+		 */
+		
+		System.out.print("이름\t학번\n");
+		System.out.println("Mr.H\t2020_000123");
+		System.out.println("Mr.K\t2020_000124");
+		
+		System.out.println("어머님께서는 \"밥 먹고 설거지 해놔라.\"라고 하셨습니다.");
+		System.out.println("그래서 나는 \'네.\'라고 했습니다.");
+		
+		System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+		System.out.println("\\\\\\2020-08-01\\\\\\");
+		
+		//데이터 입력
+		Scanner scanner = new Scanner(System.in);  	//클래스로부터 객체 새로 생성하는 것
+		
+//		String inputStr = scanner.nextLine();
+//		System.out.println("inputStr: " + inputStr);
+		
+		/*
+		 *  nextByte() 	:	정수 입력
+		 *  nextInt()	:	정수 입력
+		 *  nextLong()	:	정수 입력
+		 *  nextFloat()	:	실수 입력
+		 *  nextDouble():	실수 입력
+		 *  nextLine()	:	문자열 입력
+		 *  nextBoolean():	논리 입력	
+		 */
+		
+		/*
+		int inputInt = scanner.nextInt();					//10  \n
+		System.out.println("inputInt: " + inputInt);		//inputInt: 10
+		
+		scanner.nextLine();
+		
+		String inputString = scanner.nextLine();			//java
+		System.out.println("inputString: " + inputString); 	//inputString: java
+		*/
+		
+		String inputString = scanner.next();
+		System.out.println("inputString: " + inputString);
+		
+		scanner.close();
 		
 	}
 
